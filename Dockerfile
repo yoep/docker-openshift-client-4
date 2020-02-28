@@ -9,7 +9,7 @@ RUN apk update && apk upgrade && \
 # download the latest oc client
 ADD https://mirror.openshift.com/pub/openshift-v4/clients/oc/${OC_VERSION}/linux/oc.tar.gz /opt/oc/oc.tar.gz
 RUN tar -xvzf /opt/oc/oc.tar.gz -C /opt/oc/ && \
-  chmod 777 /opt/oc/oc && \
+  chmod +x /opt/oc/oc && \
   mv /opt/oc/oc /usr/bin && \
   rm -f /opt/oc/*
 
