@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc
 
-ENV OC_VERSION "4.3"
+ENV OC_VERSION "4.6"
 
 # install additional libs
 RUN apk update && apk upgrade && \
@@ -15,5 +15,5 @@ RUN tar -xvzf /opt/oc/oc.tar.gz -C /opt/oc/ && \
 
 LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.name="yoep/openshift-client-4" \
-    org.label-schema.description="Docker image with OpenShift client 4.3" \
+    org.label-schema.description="Docker image with OpenShift client 4.6" \
     org.label-schema.vcs-url="https://github.com/yoep/docker-openshift-client-4"
